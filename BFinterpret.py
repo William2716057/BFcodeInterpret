@@ -48,8 +48,8 @@ def BFintperpret(code, input_data=""):
     return output
 
 
-
-bf_code = "++++++++[>++++[>++>+++>+++>+<<<<-]>+>+>->>+[<]<-]>>.>---.+++++++..+++." #edit here
+bf_code = input("Enter BF encoded input: ")
+#bf_code = "++++++++[>++++[>++>+++>+++>+<<<<-]>+>+>->>+[<]<-]>>.>---.+++++++..+++." #edit here
 decoded = BFintperpret(bf_code)
 print(decoded)
     
