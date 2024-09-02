@@ -12,13 +12,13 @@ def BFintperpret(code, input_data=""):
     while code_pointer < len(code):
         command = code[code_pointer]
         
-        if command == '>':
+        if command == '>': # increment pointer to right
             pointer += 1 
-        elif command == '<':
+        elif command == '<': # decrement point to left
             pointer -= 1  
-        elif command == '+':
+        elif command == '+': # increment byte
             tape[pointer] = (tape[pointer] + 1) % 256  
-        elif command == '-':
+        elif command == '-': # decrement byte
             tape[pointer] = (tape[pointer] - 1) % 256  
         elif command == '.':
             output += chr(tape[pointer])  
